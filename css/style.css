@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+
+.header-container {
+    background-image: url(../img/pexels-pixabay-315938.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Poppins',sans-serif;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". Nav Nav . . . . . . . . ."
+    ". Nav Nav . Logo Logo Logo Logo . . . ."
+    ". Nav Nav . Logo Logo Logo Logo . . . ."
+    ". Nav Nav . . . . . . . . ."
+    ". . . . . icon icon . . . . .";
+}
+
+.Logo{
+    grid-area: Logo
+}
+
+.Nav-bar{
+    grid-area: Nav
+}
+
+.icon{ 
+    color: white;
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+
+.mouse{
+    width: 25px;
+    height: auto;
+}
+
+.list-holder{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list-title{
+    text-decoration: none;
+    color: #07D2FF;
+}
+
+
+.Port-container{
+    background-image: url(../img/pexels-rakicevic-nenad-1274260.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100% auto;
+    height: 100vh ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px 8px;
+    grid-template-areas:
+    ". . . . . . . . . . . . . ."
+    ". Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos ."
+    ". Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos ."
+    ". Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos ."
+    ". Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos Apropos ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . ."
+}
+  
+.Portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px 7px;
+    grid-template-areas:
+    "left left left imgs imgs imgs imgs imgs imgs imgs"
+    "left left left imgs imgs imgs imgs imgs imgs imgs"
+    "left left left imgs imgs imgs imgs imgs imgs imgs";
+    grid-area: Apropos;
+}
+  
+.left{
+    grid-area: left;
+}
+  
+.imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px 8px;
+    grid-template-areas:
+    ". GIT GIT GIT GIT GIT GIT GIT GIT GIT GIT GIT GIT ."
+    ". I1 I1 I1 I2 I2 I2 I3 I3 I3 I7 I7 I7 ."
+    ". I1 I1 I1 I2 I2 I2 I3 I3 I3 I7 I7 I7 ."
+    ". I4 I4 I4 I5 I5 I5 I6 I6 I6 I7 I7 I7 ."
+    ". I4 I4 I4 I5 I5 I5 I6 I6 I6 I7 I7 I7 .";
+    grid-area: imgs;
+}
+.cr{
+    border-radius: 50px;
+    background-repeat: no-repeat
+}
+  
+.I1{ 
+    grid-area: I1;
+    background-image: url(../img/image-hero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+  
+.I2{
+    grid-area: I2;
+    background-image: url(../img/image-pocket-borealis.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+  
+.I3{
+    grid-area: I3;
+    background-image: url(../img/image-deep-earth.jpg);
+    background-size: cover;
+    width: 60%;
+    margin-left: 35px;
+    border-radius: 55px;
+   
+}
+  
+.I4{
+    grid-area: I4;
+    background-image: url(../img/Design_FB.png);
+    background-size: cover;
+
+}
+  
+.I5{ 
+    grid-area: I5;
+    background-image: url(../img/meditation.jpg);
+    background-size: cover;
+    width: 60%;
+    margin-left: 40px;
+}
+  
+.I6{ 
+    grid-area: I6;
+    background-image: url(../img/image-interactive.jpg);
+    background-size: cover;
+
+}
+  
+.I7{
+    grid-area: I7;
+    background-image: url(../img/image-from-above.jpg);
+
+}
+  
+.GIT{
+    grid-area: GIT;
+}
+  
