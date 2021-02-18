@@ -71,7 +71,6 @@
   list-style: none;
 }
 
-.burger-menu ul li a {}
 
 #btn-burger span:nth-child(1) {
   top: 0px;
@@ -208,6 +207,8 @@ h1 {
   .Nav-bar {
     display: none;
   }
+
+
 }
 
 
@@ -243,7 +244,7 @@ h1 {
 
 
 
-.git-hover:hover{
+.git-hover:hover {
   color: #00FF29;
   cursor: pointer;
   transition: .6s;
@@ -346,7 +347,7 @@ h2 {
   .apropos {
     width: 960px;
   }
-  
+
 }
 
 
@@ -433,11 +434,17 @@ footer ul {
   width: 100%;
 }
 
-.cv{
+footer ul li a {
+  text-decoration: none;
+
+  color: rgb(7, 210, 255);
+}
+
+.cv {
   text-align: center;
 }
 
-.cv h1:hover{
+.cv h1:hover {
   color: #00FF29;
   transition: .6s;
   cursor: pointer;
@@ -500,7 +507,7 @@ footer .circle:hover {
   margin-left: 4px;
 }
 
-.flex-footer li:hover{
+.flex-footer li a:hover {
   color: #00FF29;
   cursor: pointer;
   text-transform: uppercase;
@@ -523,6 +530,8 @@ footer .circle:hover {
     width: 100%;
   }
 
+
+
   .flex-footer,
   .social {
     margin-top: 3rem;
@@ -531,13 +540,67 @@ footer .circle:hover {
 
 }
 
+.copyr {
+  font-size: 0.8rem;
+  letter-spacing: 1.8px;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}
+
+
 
 
 /* end footer section */
 
+/* Start pop-up */
 
-.header-container,
-.description,
-.competences,
-.apropos,
-footer {}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: black;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+
+  color: #06D85F;
+}
+
+@media screen and (max-width: 700px) {
+
+  .popup {
+    width: 80%;
+  }
+}
+
+/* End pop-up */
