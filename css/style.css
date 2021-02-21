@@ -180,13 +180,15 @@ h1 {
   cursor: pointer;
 }
 
-.list-title {
+.list-title,
+.list-titl {
   text-decoration: none;
   color: #07D2FF;
   transition: all .2s ease-in-out;
 }
 
-.list-holder .list-title:hover {
+.list-holder .list-title:hover,
+.list-titl:hover {
   color: #00FF29;
   text-transform: uppercase;
   font-size: 18px;
