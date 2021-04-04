@@ -243,9 +243,20 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#btn-burger').click(function () {
+            $('#btn-burger').click(function (e) {
                 $('.burger-menu').toggleClass('isOpen');
+
             });
+
+            $('a.list-title').click(function () {
+
+                setTimeout(function () {
+                    $('.burger-menu').toggleClass('isOpen');
+                    $('.burger-menu').removeAttr("style");
+                }, 500);
+
+            });
+
         });
         $(document).ready(function () {
             $('.list-title').click(function () {

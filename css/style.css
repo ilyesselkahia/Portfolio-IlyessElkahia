@@ -57,6 +57,7 @@
 .burger-menu.isOpen {
   transform: translateX(0%);
   transform: translateY(0%);
+  display: block;
 }
 
 .burger-menu ul {
